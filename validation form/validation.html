@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALIDATION FORM</title>
+    <link rel="stylesheet" href="validation.css">
+
+    <script src="https://kit.fontawesome.com/7e1ee26505.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <i class="fas fa-paper-plane"></i>
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+                <span id="name-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Phone No.</label>
+                <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
+                <span id="phone-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email id" id="contact-email" onkeyup="validateEmail()">
+                <span id="email-error"></span>
+            </div>
+
+            <div class="pass">
+                <label>Password</label>
+
+                <input id="pass" type="password" name="pass"placeholder="Enter Password" required""><br>
+                <label>Confirm Password</label>
+    
+                <input id="confirm_pass" type="password" name="confirm_pass" placeholder="Confirm Password" required onkeyup="validate_password()">
+    
+            </div>
+            <span id="wrong_pass_alert"></Span>
+                <div class="buttons">
+
+                    <button id="create" class="submit_btn" onclick="wrong_pass_alert()">Submit</button>
+        
+                </div>
+        </form>
+    </div>
+    <script src="validation.js"></script>
+</body>
+</html>
