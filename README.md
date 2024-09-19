@@ -7,8 +7,8 @@ A Validation form created by using HTML CSS and JavaScript. I used various  form
 
 ## Features
 
-- **Beautiful Sleek UI:** 
-- **Responsive Design:** 
+- **Beautiful Sleek UI** 
+- **Responsive Design** 
 
 
 ## Technologies Used
